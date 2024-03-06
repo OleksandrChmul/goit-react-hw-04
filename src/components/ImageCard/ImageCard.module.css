@@ -1,0 +1,33 @@
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.img {
+	border-radius: 8px;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 8px 12px;
+	background-color: rgba(200, 200, 200, 0.9);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.wrapper:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	font-style: italic;
+	color: #333;
+}
